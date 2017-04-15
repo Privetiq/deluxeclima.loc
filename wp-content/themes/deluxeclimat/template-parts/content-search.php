@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package kulik-system
+ * @package deluxeclimat
  */
 
 ?>
@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php kulik_system_posted_on(); ?>
+			<?php deluxeclimat_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -25,6 +25,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php kulik_system_entry_footer(); ?>
+		<?php deluxeclimat_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

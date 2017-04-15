@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package kulik-system
+ * @package deluxeclimat
  */
 
 get_header(); ?>

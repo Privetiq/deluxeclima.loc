@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package kulik-system
+ * @package deluxeclimat
  */
 
 /**
@@ -13,23 +13,23 @@
  * See: https://jetpack.com/support/infinite-scroll/
  * See: https://jetpack.com/support/responsive-videos/
  */
-function kulik_system_jetpack_setup() {
+function deluxeclimat_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'kulik_system_infinite_scroll_render',
+		'render'    => 'deluxeclimat_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 }
-add_action( 'after_setup_theme', 'kulik_system_jetpack_setup' );
+add_action( 'after_setup_theme', 'deluxeclimat_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function kulik_system_infinite_scroll_render() {
+function deluxeclimat_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

@@ -17,3 +17,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://github.com/necolas/normalize.css
 */
 @import "css/normalize.scss";
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}

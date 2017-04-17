@@ -379,8 +379,96 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  margin: 0; }
+
+li {
+  list-style: none;
+  display: inline-block; }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #000; }
+
+#page {
+  margin-top: 65px; }
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto; }
+
+.site-header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(254, 252, 251, 0.6); }
+
+.logo {
+  display: inline-block;
+  position: relative;
+  z-index: 1000; }
+
+a.custom-logo-link {
+  display: block;
+  height: auto;
+  border: 0;
+  border-radius: 50%; }
+
+.main-navigation {
+  display: inline-block;
+  height: 65px;
+  padding-top: 20px;
+  font-size: 1.2em; }
+
+.phone {
+  display: inline-block;
+  margin-top: 14px; }
+
+.adress-blok {
+  height: 120px;
+  padding: 30px 0; }
+  .adress-blok p {
+    display: inline-block;
+    width: 20%;
+    text-align: center; }
+
+.zvonok {
+  background: #ff9200;
+  border: 2px solid #ff9200;
+  color: #fff;
+  margin-top: 22px; }
+  .zvonok:hover {
+    background: none;
+    color: #000; }
+
+.hamburger {
+  border: 1px solid #ff9200;
+  background: none;
+  display: inline-block;
+  position: relative;
+  left: 0; }
+
+.site-info {
+  background: #ff9200;
+  width: 100%;
+  margin-top: -5px; }
+  .site-info p {
+    line-height: 80px;
+    text-align: center; }
+
+.mainslider ul li .caption-wrap {
+  width: 40%;
+  min-width: 300px;
+  top: 30px;
+  bottom: auto;
+  left: 20%; }
+
+ul.sub-menu {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

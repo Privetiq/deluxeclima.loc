@@ -14,7 +14,10 @@
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-            <p>2017, Deluxeclimat</p>
+            <div class="logo_footer hidden-sm hidden-xs">
+                <?php echo get_custom_logo(); ?>
+            </div>
+            <p class="">2017, Deluxeclimat</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

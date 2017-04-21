@@ -389,9 +389,13 @@ li {
   list-style: none;
   display: inline-block; }
 
-a, a:hover, a:visited {
+a, a:visited, a:active {
   text-decoration: none;
   color: #000; }
+
+a:hover {
+  text-decoration: underline;
+  color: #191e23; }
 
 #page {
   margin-top: 65px; }
@@ -412,6 +416,13 @@ a, a:hover, a:visited {
   display: inline-block;
   position: relative;
   z-index: 1000; }
+
+.logo_footer {
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  bottom: 30px;
+  left: 10%; }
 
 a.custom-logo-link {
   display: block;
@@ -454,6 +465,7 @@ a.custom-logo-link {
   left: 0; }
 
 .site-info {
+  position: relative;
   background: #ff9200;
   width: 100%;
   margin-top: -5px; }
@@ -469,6 +481,7 @@ a.custom-logo-link {
   left: 20%; }
 
 ul.sub-menu {
-  display: none; }
+  padding-left: 0;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: deluxeclimat
 Theme URI: http://www.deluxeclimate.com.ua/
@@ -6,15 +7,14 @@ Author URI: http://vk.com/intellect_pow
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: http://www.deluxeclimate.com.ua/
-Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+╤Б╨╛╨┤╨╡╤А╨╢╨░╨╜╨╕╨╡:
+1. ╨Я╤А╨╛╤Б╤В╤Л╨╡ ╤В╤Н╨│╨╕ HTML
+2. ╨и╨░╨┐╨║╨░
+3. ╨Ъ╨╛╨╜╤В╨╡╨╜╤В
+4. ╨Я╨╛╨┤╨▓╨░╨╗
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://github.com/necolas/normalize.css
 */
 html {
   line-height: 1.15;
@@ -379,6 +379,7 @@ template {
 [hidden] {
   display: none; }
 
+/*╨Я╤А╨╛╤Б╤В╤Л╨╡ ╤В╤Н╨│╨╕ HTML*/
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -397,12 +398,10 @@ a:hover {
   text-decoration: underline;
   color: #191e23; }
 
-#page {
-  margin-top: 65px; }
-
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto; }
+/*------------------------------------------------╨и╨░╨┐╨║╨░ ╤Б╨░╨╣╤В╨░----------------------------------------------*/
+ul.sub-menu {
+  padding-left: 0;
+  display: inline-block; }
 
 .site-header {
   width: 100%;
@@ -416,13 +415,6 @@ a:hover {
   display: inline-block;
   position: relative;
   z-index: 1000; }
-
-.logo_footer {
-  display: inline-block;
-  position: absolute;
-  z-index: 1000;
-  bottom: 30px;
-  left: 10%; }
 
 a.custom-logo-link {
   display: block;
@@ -440,6 +432,65 @@ a.custom-logo-link {
   display: inline-block;
   margin-top: 14px; }
 
+.menu-item-has-children {
+  padding: 5px;
+  position: relative;
+  cursor: help; }
+  .menu-item-has-children a {
+    height: 100%;
+    width: 100%; }
+  .menu-item-has-children::after {
+    display: inline-block;
+    width: 8px;
+    content: " ";
+    background-image: url("img/treyg.png");
+    height: 6px;
+    vertical-align: middle; }
+  .menu-item-has-children:hover {
+    background-color: #ff9200;
+    color: #fff; }
+  .menu-item-has-children ul.sub-menu {
+    display: none; }
+  .menu-item-has-children:hover .sub-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    background-color: #f2fcff;
+    border-left: 2px solid #e8e8e8;
+    border-right: 2px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8; }
+  .menu-item-has-children:hover .sub-menu li {
+    padding: 5px; }
+
+button.zvonok {
+  margin-top: 17px;
+  padding: 6px;
+  border: none;
+  background-color: #ff9200;
+  border: 2px solid #ff9200;
+  color: #fff; }
+  button.zvonok:hover {
+    background-color: transparent;
+    color: #000; }
+
+/*------------------------------------------------------╨Ъ╨╛╨╜╨╡╤В╨╜╤В-----------------------------------*/
+#page {
+  margin-top: 65px; }
+
+.mainslider ul li .caption-wrap {
+  width: 25%;
+  min-width: 300px;
+  top: 30px;
+  bottom: auto;
+  left: 20%;
+  color: #fff8e5; }
+
+.buttonblock a {
+  min-height: 44px;
+  text-align: center;
+  border: 1px solid red; }
+
 .adress-blok {
   height: 120px;
   padding: 30px 0; }
@@ -448,21 +499,13 @@ a.custom-logo-link {
     width: 20%;
     text-align: center; }
 
-.zvonok {
-  background: #ff9200;
-  border: 2px solid #ff9200;
-  color: #fff;
-  margin-top: 22px; }
-  .zvonok:hover {
-    background: none;
-    color: #000; }
-
-.hamburger {
-  border: 1px solid #ff9200;
-  background: none;
+/*-----------------------------------------------------╨Я╨╛╨┤╨▓╨░╨╗------------------------------------------*/
+.logo_footer {
   display: inline-block;
-  position: relative;
-  left: 0; }
+  position: absolute;
+  z-index: 1000;
+  bottom: 30px;
+  left: 10%; }
 
 .site-info {
   position: relative;
@@ -472,16 +515,5 @@ a.custom-logo-link {
   .site-info p {
     line-height: 80px;
     text-align: center; }
-
-.mainslider ul li .caption-wrap {
-  width: 40%;
-  min-width: 300px;
-  top: 30px;
-  bottom: auto;
-  left: 20%; }
-
-ul.sub-menu {
-  padding-left: 0;
-  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

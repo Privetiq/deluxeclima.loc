@@ -6,17 +6,18 @@ Author URI: http://vk.com/intellect_pow
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: http://www.deluxeclimate.com.ua/
-Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+содержание:
+1. Простые тэги HTML
+2. Шапка
+3. Контент
+4. Подвал
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://github.com/necolas/normalize.css
 */
 @import "css/normalize.scss";
+
+/*Простые тэги HTML*/
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,13 +41,10 @@ a:hover {
   color: #191e23;
 }
 
-#page {
-  margin-top: 65px;
-}
-
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
+/*------------------------------------------------Шапка сайта----------------------------------------------*/
+ul.sub-menu {
+  padding-left: 0;
+  display: inline-block;
 }
 
 .site-header {
@@ -62,14 +60,6 @@ a:hover {
   display: inline-block;
   position: relative;
   z-index: 1000;
-}
-
-.logo_footer {
-  display: inline-block;
-  position: absolute;
-  z-index: 1000;
-  bottom: 30px;
-  left: 10%;
 }
 
 a.custom-logo-link {
@@ -91,6 +81,86 @@ a.custom-logo-link {
   margin-top: 14px;
 }
 
+
+.menu-item-has-children {
+  padding: 5px;
+  position: relative;
+  cursor: help;
+  & a {
+    height: 100%;
+    width: 100%;
+  }
+
+  &::after {
+    display: inline-block;
+    width: 8px;
+    content: " ";
+    background-image: url("img/treyg.png");
+    height: 6px;
+    vertical-align: middle;
+  }
+  &:hover {
+    background-color: #ff9200;
+    color: #fff;
+  }
+  & ul.sub-menu {
+    display: none;
+  }
+  &:hover .sub-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    background-color: #f2fcff;
+    border-left: 2px solid #e8e8e8;
+    border-right: 2px solid #e8e8e8;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  &:hover .sub-menu li {
+    padding: 5px;
+  }
+}
+
+button.zvonok {
+  margin-top: 17px;
+  padding: 6px;
+  border: none;
+  background-color: #ff9200;
+  border: 2px solid #ff9200;
+  color: #fff;
+  &:hover {
+    background-color: transparent;
+    color: #000;
+  }
+}
+
+/*------------------------------------------------------Конетнт-----------------------------------*/
+
+#page {
+  margin-top: 65px;
+}
+
+.mainslider ul li .caption-wrap {
+  width: 25%;
+  min-width: 300px;
+  top: 30px;
+  bottom: auto;
+  left: 20%;
+  color: #fff8e5;
+}
+
+.buttonblock {
+
+  & a {
+    min-height: 44px;
+    text-align: center;
+    border: 1px solid red;
+  }
+}
+
+
+
+
 .adress-blok {
   height: 120px;
   padding: 30px 0;
@@ -101,24 +171,15 @@ a.custom-logo-link {
   }
 }
 
-.zvonok {
-  background: #ff9200;
-  border: 2px solid #ff9200;
-  color: #fff;
-  margin-top: 22px;
-  &:hover {
-    background: none;
-    color: #000;
-  }
+/*-----------------------------------------------------Подвал------------------------------------------*/
+.logo_footer {
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  bottom: 30px;
+  left: 10%;
 }
 
-.hamburger {
-  border: 1px solid #ff9200;
-  background: none;
-  display: inline-block;
-  position: relative;
-  left: 0;
-}
 
 .site-info {
   position: relative;
@@ -131,15 +192,3 @@ a.custom-logo-link {
   }
 }
 
-.mainslider ul li .caption-wrap {
-  width: 40%;
-  min-width: 300px;
-  top: 30px;
-  bottom: auto;
-  left: 20%;
-}
-
-ul.sub-menu {
-  padding-left: 0;
-  display: inline-block;
-}

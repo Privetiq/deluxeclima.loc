@@ -9,12 +9,11 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-
             <?php
             echo do_shortcode("[metaslider id=58]");
             ?>
 
+        <main id="main" class="site-main container" role="main">
             <?php
             while ( have_posts() ) : the_post();
 
@@ -23,15 +22,15 @@ get_header(); ?>
             endwhile; // End of the loop.
             ?>
 
-            <section class="buttonblock">
-                <a href="#">Комплексное решение</a>
-                <a href="#">Отопление</a>
-                <a href="#">Охлаждение</a>
-                <a href="#">Энергосберегающие технологии</a>
+            <section class="buttonblock row">
+                <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Комплексное решение</a>
+                <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Отопление</a>
+                <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Охлаждение</a>
+                <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Энергосберегающие технологии</a>
             </section>
 
             <section class="whyme">
-                <h2>Почему мы</h2>
+                <h2 class="col-lg-3">Почему мы</h2>
 
                 <p>Индивидуальный подход</p>
                 <span>Для нас каждый клиент и объект уникален, потому что наша задача предоставить решение, максимально удовлетворяющее ваши потребности</span>

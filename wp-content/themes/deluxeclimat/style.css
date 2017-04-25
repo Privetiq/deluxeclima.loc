@@ -470,20 +470,19 @@ a.custom-logo-link {
   .menu-item-has-children:hover .sub-menu li {
     padding: 5px; }
 
-button.zvonok {
+.zvonok {
   margin-top: 17px;
   padding: 6px;
-  border: none;
   background-color: #ff9200;
   border: 2px solid #ff9200;
-  color: #fff; }
-  button.zvonok:hover {
+  color: #fff;
+  text-align: center; }
+  .zvonok:hover {
     background-color: transparent;
     color: #000; }
 
 .hamburger {
   margin-top: 14px;
-  margin-left: -14px;
   background: none;
   border: 2px solid #ff9200;
   text-align: center; }
@@ -583,6 +582,9 @@ button.zvonok {
   background-position: left top;
   background-repeat: no-repeat no-repeat;
   background-size: cover; }
+  #whyme h2 {
+    padding-bottom: 25px;
+    padding-top: 25px; }
   #whyme h3 {
     text-align: center; }
     #whyme h3 strong {

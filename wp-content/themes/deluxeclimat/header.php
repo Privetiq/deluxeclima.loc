@@ -34,9 +34,9 @@
                         <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
                     </div>
                 </nav><!-- #site-navigation -->
-                <button class="zvonok col-lg-2 col-md-2 col-sm-3 hidden-xs">Заказать звонок</button>
-                <p class="phone col-sm-3 col-xs-4 col-lg-2 col-md-3"><a href="tel:0672262629">(067)226-26-29</a>  <a href="tel:0952872629">(095)287-26-29</a>  <a href="tel:0948282629">(094)828-26-29</a></p>
-                <button class="hamburger hidden-lg hidden-md col-sm-1 col-xs-1 col-sm-push-2 col-xs-push-7">☰</button>
+                <a href="#voprosi" class="zvonok col-lg-2 col-md-2 col-sm-3 hidden-xs">Заказать звонок</a>
+                <p class="phone col-sm-3 col-xs-10 col-lg-2 col-md-3"><a href="tel:0672262629">(067)226-26-29</a>  <a href="tel:0952872629">(095)287-26-29</a>  <a href="tel:0948282629">(094)828-26-29</a></p>
+                <a href="#voprosi" class="hamburger hidden-lg hidden-md col-sm-1 col-xs-1 col-sm-push-2">☰</a>
             </div>
         </div>
 

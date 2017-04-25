@@ -130,13 +130,13 @@ a.custom-logo-link {
   }
 }
 
-button.zvonok {
+.zvonok {
   margin-top: 17px;
   padding: 6px;
-  border: none;
   background-color: #ff9200;
   border: 2px solid #ff9200;
   color: #fff;
+  text-align: center;
   &:hover {
     background-color: transparent;
     color: #000;
@@ -145,7 +145,6 @@ button.zvonok {
 
 .hamburger {
   margin-top: 14px;
-  margin-left: -14px;
   background: none;
   border: 2px solid #ff9200;
   text-align: center;
@@ -266,6 +265,10 @@ button.zvonok {
   background-position: left top;
   background-repeat: no-repeat no-repeat;
   background-size: cover;
+  & h2 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
   & h3 {
     text-align: center;
     & strong {

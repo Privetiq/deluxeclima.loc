@@ -398,6 +398,13 @@ a:hover {
   text-decoration: underline;
   color: #191e23; }
 
+section {
+  position: relative; }
+
+h2 {
+  text-transform: uppercase;
+  text-align: center; }
+
 /*------------------------------------------------╨и╨░╨┐╨║╨░ ╤Б╨░╨╣╤В╨░----------------------------------------------*/
 ul.sub-menu {
   padding-left: 0;
@@ -430,12 +437,12 @@ a.custom-logo-link {
 
 .phone {
   display: inline-block;
-  margin-top: 14px; }
+  margin-top: 4px; }
 
 .menu-item-has-children {
   padding: 5px;
   position: relative;
-  cursor: help; }
+  cursor: hand; }
   .menu-item-has-children a {
     height: 100%;
     width: 100%; }
@@ -474,30 +481,327 @@ button.zvonok {
     background-color: transparent;
     color: #000; }
 
+.hamburger {
+  margin-top: 14px;
+  margin-left: -14px;
+  background: none;
+  border: 2px solid #ff9200;
+  text-align: center; }
+
 /*------------------------------------------------------╨Ъ╨╛╨╜╨╡╤В╨╜╤В-----------------------------------*/
 #page {
   margin-top: 65px; }
 
 .mainslider ul li .caption-wrap {
-  width: 25%;
+  width: 20%;
   min-width: 300px;
-  top: 30px;
+  top: 35px;
   bottom: auto;
   left: 20%;
-  color: #fff8e5; }
-
-.buttonblock a {
-  min-height: 44px;
   text-align: center;
-  border: 1px solid red; }
+  color: #fff8e5; }
+  .mainslider ul li .caption-wrap .caption {
+    padding: 20px; }
+  @media (max-width: 756px) {
+    .mainslider ul li .caption-wrap {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: rgba(255, 255, 255, 0.2);
+      color: #000;
+      font-size: 0.8em; } }
 
-.adress-blok {
-  height: 120px;
-  padding: 30px 0; }
-  .adress-blok p {
-    display: inline-block;
+.h2_divider {
+  text-align: center;
+  position: relative;
+  display: inline-block; }
+  .h2_divider:before {
     width: 20%;
+    display: inline-block;
+    position: relative;
+    content: "";
+    height: 2px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px; }
+    @media (max-width: 756px) {
+      .h2_divider:before {
+        display: none; } }
+  .h2_divider:after {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    content: "";
+    height: 2px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px; }
+    @media (max-width: 756px) {
+      .h2_divider:after {
+        display: none; } }
+  .h2_divider h2 {
+    display: inline-block;
+    width: auto;
+    max-width: 40%; }
+    @media (max-width: 756px) {
+      .h2_divider h2 {
+        max-width: 100%;
+        width: 100%; } }
+
+.buttonblock {
+  min-height: 50px;
+  padding: 24px 0; }
+  .buttonblock div:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: ""; }
+  .buttonblock a {
+    margin-top: 10px;
+    padding: 10px 0;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #3a3c49;
+    color: #fff; }
+  .buttonblock a.but_komleks:hover {
+    background-color: #ff9300; }
+  .buttonblock a.but_otoplenie:hover {
+    background-color: #ff4848; }
+  .buttonblock a.but_ohlad:hover {
+    background-color: #3b96ca; }
+  .buttonblock a.but_energoteh:hover {
+    background-color: #32b441; }
+
+#whyme {
+  position: relative;
+  background-image: url(img/podlojka.png);
+  background-position: left top;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover; }
+  #whyme h3 {
     text-align: center; }
+    #whyme h3 strong {
+      font-size: 1.1em;
+      text-transform: uppercase; }
+  #whyme p {
+    text-align: center; }
+  #whyme .iconka {
+    border: 2px solid #ff9200;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.1); }
+    #whyme .iconka:hover {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+      border: 3px solid #ff9200; }
+    #whyme .iconka .icons-hand {
+      background-image: url(img/charity.png); }
+    #whyme .iconka .icons-home {
+      background-image: url(img/house-key.png); }
+    #whyme .iconka .icons-mydilo {
+      background-image: url(img/support.png); }
+    #whyme .iconka .icons-shield {
+      background-image: url(img/shield.png); }
+    #whyme .iconka a {
+      display: block;
+      background-repeat: no-repeat no-repeat;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%; }
+
+#ourprojects h2 {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+#ourprojects .background-ourproject {
+  min-height: 260px;
+  color: #fff;
+  position: relative; }
+  #ourprojects .background-ourproject .bg-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff9200;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 20px 0 0;
+    z-index: 1;
+    overflow: hidden; }
+    #ourprojects .background-ourproject .bg-before img {
+      position: absolute;
+      left: -120px;
+      top: -160px;
+      height: 100%;
+      transform: rotate(340deg);
+      z-index: 1; }
+      @media (max-width: 960px) {
+        #ourprojects .background-ourproject .bg-before img {
+          display: none; } }
+  #ourprojects .background-ourproject .bg-after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #ff9200;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0 0 0;
+    z-index: 1; }
+    #ourprojects .background-ourproject .bg-after img {
+      position: absolute;
+      right: 10%;
+      top: -20px;
+      height: 100%;
+      transform: rotate(340deg);
+      z-index: 5; }
+      @media (max-width: 960px) {
+        #ourprojects .background-ourproject .bg-after img {
+          right: 20%;
+          height: 50%; } }
+      @media (max-width: 460px) {
+        #ourprojects .background-ourproject .bg-after img {
+          right: 23px;
+          height: 25%; } }
+#ourprojects strong {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  z-index: 10;
+  padding-top: 60px;
+  position: inherit;
+  font-size: 22px; }
+#ourprojects hr {
+  position: relative;
+  width: 15%;
+  color: #fff;
+  z-index: 10;
+  margin: 20px auto; }
+#ourprojects p {
+  font-size: 1em;
+  text-align: center;
+  z-index: 10;
+  position: inherit; }
+#ourprojects button {
+  display: block;
+  z-index: 10;
+  position: inherit;
+  padding: 15px;
+  margin: 30px auto;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  background-color: #fff; }
+
+#about-us {
+  background-color: #fdf6db; }
+  #about-us h2 {
+    padding-top: 72px;
+    padding-bottom: 62px;
+    width: 100%;
+    font-size: 22px;
+    text-transform: uppercase; }
+  #about-us .img_about_us {
+    width: 100%;
+    margin-bottom: 10px; }
+
+#kakrabotaem {
+  position: relative;
+  color: #fff;
+  background-image: url("img/kakrabotaembg.png");
+  background-position: center;
+  background-size: cover; }
+  #kakrabotaem div {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #kakrabotaem img {
+    float: left;
+    margin-right: 20px; }
+  #kakrabotaem p {
+    display: block; }
+  #kakrabotaem .podlojka {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#voprosi {
+  background-image: url(img/podlojka.png);
+  background-position: left top;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #voprosi h2 {
+    width: 100%;
+    padding: 35px; }
+  #voprosi p {
+    padding-bottom: 35px;
+    font-size: 1.3em; }
+  #voprosi input {
+    width: 100%;
+    padding: 15px;
+    margin: 25px auto; }
+    @media (max-width: 756px) {
+      #voprosi input {
+        margin: 5px auto; } }
+  #voprosi .submit-but {
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #ff9200;
+    color: #fff;
+    border: 2px solid #ff9200; }
+    #voprosi .submit-but:hover {
+      background: none;
+      color: #000; }
+
+#kompleks {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background-image: url(img/dom_kompl.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px; }
+  @media (max-width: 756px) {
+    #kompleks {
+      height: auto; } }
+  #kompleks .caption {
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: justify;
+    margin-left: 40%;
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; }
+    @media (max-width: 756px) {
+      #kompleks .caption {
+        max-width: 100%;
+        margin: 0; } }
+    #kompleks .caption button {
+      display: block;
+      border: 2px solid #ff9200;
+      background-color: #ff9200;
+      margin: 15px 0;
+      padding: 0 25px; }
+      #kompleks .caption button:hover {
+        background: none; }
+
+#adress-blok {
+  background-color: #3a3c49;
+  padding: 30px 0;
+  color: #fff; }
+  #adress-blok p {
+    text-align: center; }
+  #adress-blok a {
+    color: #fff; }
+  #adress-blok a:hover, #adress-blok a:focus {
+    color: #e5e767; }
 
 /*-----------------------------------------------------╨Я╨╛╨┤╨▓╨░╨╗------------------------------------------*/
 .logo_footer {

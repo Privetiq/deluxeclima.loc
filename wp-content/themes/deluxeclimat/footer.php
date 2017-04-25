@@ -17,7 +17,7 @@
             <div class="logo_footer hidden-sm hidden-xs">
                 <?php echo get_custom_logo(); ?>
             </div>
-            <p class="">2017, Deluxeclimat</p>
+            <p><strong>2017, Deluxeclimat</strong></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -10,6 +10,7 @@ License: GNU General Public License v2 or later
 Text Domain: http://www.deluxeclimate.com.ua/
 
 ╤Б╨╛╨┤╨╡╤А╨╢╨░╨╜╨╕╨╡:
+0. ╨Э╨╛╤А╨╝╨░╨╗╨░╨╣╨╖
 1. ╨Я╤А╨╛╤Б╤В╤Л╨╡ ╤В╤Н╨│╨╕ HTML
 2. ╨и╨░╨┐╨║╨░
 3. ╨Ъ╨╛╨╜╤В╨╡╨╜╤В
@@ -379,7 +380,7 @@ template {
 [hidden] {
   display: none; }
 
-/*╨Я╤А╨╛╤Б╤В╤Л╨╡ ╤В╤Н╨│╨╕ HTML*/
+/*-------------------╨Я╤А╨╛╤Б╤В╤Л╨╡ ╤В╤Н╨│╨╕ HTML-----------------*/
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -406,10 +407,6 @@ h2 {
   text-align: center; }
 
 /*------------------------------------------------╨и╨░╨┐╨║╨░ ╤Б╨░╨╣╤В╨░----------------------------------------------*/
-ul.sub-menu {
-  padding-left: 0;
-  display: inline-block; }
-
 .site-header {
   width: 100%;
   height: 65px;
@@ -417,75 +414,74 @@ ul.sub-menu {
   top: 0;
   z-index: 100;
   background: rgba(254, 252, 251, 0.6); }
-
-.logo {
-  display: inline-block;
-  position: relative;
-  z-index: 1000; }
-
-a.custom-logo-link {
-  display: block;
-  height: auto;
-  border: 0;
-  border-radius: 50%; }
-
-.main-navigation {
-  display: inline-block;
-  height: 65px;
-  padding-top: 20px;
-  font-size: 1.2em; }
-
-.phone {
-  display: inline-block;
-  margin-top: 4px; }
-
-.menu-item-has-children {
-  padding: 5px;
-  position: relative;
-  cursor: hand; }
-  .menu-item-has-children a {
-    height: 100%;
-    width: 100%; }
-  .menu-item-has-children::after {
+  .site-header .logo {
     display: inline-block;
-    width: 8px;
-    content: " ";
-    background-image: url("img/treyg.png");
-    height: 6px;
-    vertical-align: middle; }
-  .menu-item-has-children:hover {
-    background-color: #ff9200;
-    color: #fff; }
-  .menu-item-has-children ul.sub-menu {
-    display: none; }
-  .menu-item-has-children:hover .sub-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 50px;
-    background-color: #f2fcff;
-    border-left: 2px solid #e8e8e8;
-    border-right: 2px solid #e8e8e8;
-    border-bottom: 2px solid #e8e8e8; }
-  .menu-item-has-children:hover .sub-menu li {
-    padding: 5px; }
+    position: relative;
+    z-index: 1000; }
+    .site-header .logo a.custom-logo-link {
+      display: block;
+      height: auto;
+      border: 0;
+      border-radius: 50%; }
+  .site-header .main-navigation {
+    display: inline-block;
+    height: 65px;
+    padding-top: 20px;
+    font-size: 1.2em; }
+  .site-header ul.sub-menu {
+    padding-left: 0;
+    display: inline-block; }
+  .site-header .menu-item-has-children {
+    padding: 5px;
+    position: relative;
+    cursor: hand; }
+    .site-header .menu-item-has-children a {
+      height: 100%;
+      width: 100%; }
+    .site-header .menu-item-has-children::after {
+      display: inline-block;
+      width: 8px;
+      content: " ";
+      background-image: url("img/treyg.png");
+      height: 6px;
+      vertical-align: middle; }
+    .site-header .menu-item-has-children:hover {
+      background-color: #ff9200;
+      color: #fff; }
+    .site-header .menu-item-has-children ul.sub-menu {
+      display: none; }
+    .site-header .menu-item-has-children:hover .sub-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 50px;
+      background-color: #f2fcff;
+      border-left: 2px solid #e8e8e8;
+      border-right: 2px solid #e8e8e8;
+      border-bottom: 2px solid #e8e8e8; }
+    .site-header .menu-item-has-children:hover .sub-menu li {
+      padding: 5px; }
+  .site-header .phone {
+    display: inline-block;
+    margin-top: 4px; }
+  .site-header .hamb-block {
+    margin-top: 22px;
+    background: none; }
+  .site-header .hamburger {
+    padding: 7px 10px;
+    border: 2px solid #ff9200;
+    text-align: center; }
+  .site-header .zvonok {
+    margin-top: 22px; }
 
-.zvonok {
-  margin-top: 17px;
+.main-button {
   padding: 6px;
   background-color: #ff9200;
   border: 2px solid #ff9200;
   color: #fff;
   text-align: center; }
-  .zvonok:hover {
-    background-color: transparent;
-    color: #000; }
-
-.hamburger {
-  margin-top: 14px;
-  background: none;
-  border: 2px solid #ff9200;
-  text-align: center; }
+  .main-button:hover {
+    background-color: transparent; }
 
 /*------------------------------------------------------╨Ъ╨╛╨╜╨╡╤В╨╜╤В-----------------------------------*/
 #page {

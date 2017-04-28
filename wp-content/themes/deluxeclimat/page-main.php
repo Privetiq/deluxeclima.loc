@@ -1,26 +1,13 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Nekit
- * Date: 17.04.2017
- * Time: 23:23
- */
-
-get_header(); ?>
-
+<?php get_header(); ?>
     <div id="primary" class="content-area">
-            <?php
-            echo do_shortcode("[metaslider id=58]");
-            ?>
+        <?php echo do_shortcode("[metaslider id=58]"); ?>
 
 
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main">
             <div class="container">
                 <?php
                 while ( have_posts() ) : the_post();
-
                     get_template_part( 'template-parts/content', 'page' );
-
                 endwhile; // End of the loop.
                 ?>
 
@@ -50,8 +37,9 @@ get_header(); ?>
                             <a class="icons-home"></a>
                         </div>
                         <h3><strong>Cдача работ</strong><br> под ключ</h3>
-                        <p>Объект передается заказчику сотрудником ОТК только после введен</p>
+                        <p>Объект передается заказчику сотрудником ОТК только после введения в эксплуатацию и проверки<br>&nbsp;</p>
                     </div>
+
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <div class="iconka">
                             <a class="icons-mydilo"></a>
@@ -73,18 +61,17 @@ get_header(); ?>
 
                 </div>
             </section>
-            
+
             <section id="kompleks">
                 <div class="caption">
                     <p>Преимущество комплексного подхода по достижению максимальной экономичности для Вашего дома и офиса</p>
                     <p>Для качественного выполнения проекта по созданию уютного микроклимата помещения очень важно учитывать все внутренние и внешние факторы, влияющие на избыток
-                       и потерю тепла, что в свою очередь влечет дополнительные финансовые затраты.</p>
-                    <p>Нашей основной целью является индивидуальный подход к каждому клиенту, проведение расчетов, подбор оборудования и средств энергосбережения таким образом, чтобы обеспечить оптимальные капитальные вложения, максимально быструю окупаемость, путём снижения эксплуатационных затрат.</p>
-
-                    <button>Записаться на консультацию</button>
+                        и потерю тепла, что в свою очередь влечет дополнительные финансовые затраты.</p>
+                    <p>Нашей основной целью является индивидуальный подход к каждому клиенту, проведение расчетов, подбор оборудования и средств энергосбережения таким образом, чтобы обеспечить оптимальные капитальные вложения, максимально быструю окупаемость, путём снижения эксплуатационных затрат.</p><br>
+                    <a href="#" class="main-button">Записаться на консультацию</a>
                 </div>
             </section>
-            
+
             <section id="ourprojects" class="container-fluid">
                 <div class="row">
                     <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -107,7 +94,7 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            
+
             <section id="about-us">
                 <div class="container">
                     <div class="row">
@@ -177,15 +164,15 @@ get_header(); ?>
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <p>Адрес : г.Киев улица Васильковская 27/2</p><br>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <p>График работы: с 8:00 до 21:00 без выходных</p><br>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <p>Телефон: <a href="tel:0672262629">(067)226-26-29</a>  <a href="tel:0952872629">(095)287-26-29</a>  <a href="tel:0948282629">(094)828-26-29</a></p><br>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <p>Електронная почта: <a href="mailto:deluxeclimate@gmail.com">deluxeclimate@gmail.com</a></p>
                         </div>

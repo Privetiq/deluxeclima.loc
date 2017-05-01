@@ -15,8 +15,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
@@ -40,7 +40,7 @@
                     </p>
                 </div>
                 <div class="zvonok col-lg-2 col-md-2 col-sm-4 hidden-xs">
-                    <a href="#" class="main-button"><?php _e('Заказать звонок', 'deluxeclimat')?></a>
+                    <a href="#voprosi" class="main-button"><?php _e('Заказать звонок', 'deluxeclima')?></a>
                 </div>
                 <div class="hamb-block hidden-lg hidden-md col-sm-1 col-xs-1">
                     <a href="#voprosi" class="hamburger">☰</a>

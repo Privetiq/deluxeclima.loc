@@ -142,8 +142,10 @@ h2 {
   border: 2px solid #ff9200;
   color: #fff;
   text-align: center;
+  transition: background 0.5s;
   &:hover {
     background-color: transparent;
+    color: #000;
   }
 }
 

@@ -52,29 +52,64 @@ h2 {
 }
 
 /*------------------------------------------------Шапка сайта----------------------------------------------*/
+.mywrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .site-header {
   width: 100%;
-  height: 65px;
   position: fixed;
+  height: 65px;
   top: 0;
+  left: 0;
   z-index: 100;
-  background: rgba(254, 252, 251, 0.6);
+  background: rgba(254, 252, 251, 0.84);
+  text-align: center;
   & .logo {
     display: inline-block;
-    position: relative;
-    z-index: 1000;
+    z-index: 1001;
+    float: left;
     & a.custom-logo-link {
       display: block;
-      height: auto;
-      border: 0;
-      border-radius: 50%;
+      width: 145px;
+    }
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+
+  & .logotext-block {
+    display: inline-block;
+    width: 150px;
+    margin-top: 8px;
+    @media (max-width: 1150px) {
+      display: none;
+    }
+    & .text-logo {
+      font-weight: bold;
+      font-size: 1.36em;
+    }
+    & .text-logo2 {
+      font-size: 0.8em;
+    }
+  }
+  & .text-menu {
+    font-weight: bold;
+    @media (max-width: 1150px) {
+      display: none;
     }
   }
   & .main-navigation {
     display: inline-block;
-    height: 65px;
-    padding-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    vertical-align: top;
+    margin-top: 16px;
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+  & ul#primary-menu {
+    padding-left: 10px;
   }
   & ul.sub-menu {
     padding-left: 0;
@@ -118,22 +153,41 @@ h2 {
       padding: 5px;
     }
   }
-  & .phone {
+  & .block-phones {
     display: inline-block;
+    vertical-align: top;
     margin-top: 4px;
+    margin-right: 25px;
+    width: 101px;
+    @media (max-width: 960px) {
+      width: auto;
+      margin-top: 22px;
+      margin-right: 5px;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
   & .hamb-block {
-    margin-top: 22px;
-    background: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 14px;
+    margin-right: 14px;
+    float: right;
   }
 
   & .hamburger {
-    padding: 7px 10px;
+    padding: 6px 10px;
     border: 2px solid #ff9200;
     text-align: center;
+    background-color: inherit;
   }
   & .zvonok {
-    margin-top: 22px;
+    display: inline-block;
+    margin-top: 14px;
+    vertical-align: top;
+
   }
 }
 .main-button {
@@ -148,12 +202,182 @@ h2 {
     color: #000;
   }
 }
+.main-button2 {
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid #ff9200;
+  color: #fff;
+  text-align: center;
+  transition: background 0.5s;
+  &:hover {
+    background-color: #ff9200;
+    color: #000;
+  }
+}
+.menuactive {
+  display: none;
+  height: calc(100vh - 65px);
+  width: 100%;
+  background-color: rgba(0,0,0, 0.82);
+  border: 2px solid #ff9200;
+  position: fixed;
+  z-index: 1000;
+  & a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  & .inmenu {
+    display: inline-block;
+    width: 24%;
+    @media (max-width: 756px) {
+      width: 100%;
+    }
+    &:hover {
+      color: #ff9200;
+    }
+  }
+  .inmenu-block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  & .inmenuwrap {
+    display: block;
+    width: 100%;
+  }
+  & .main-button {
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    &:hover {
+      color: #ff9200;
+    }
+  }
+  & .languageblock {
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+  }
+  & .language-pick {
+    display: inline-block;
+    padding: 20px;
+  }
+}
+#formcallback {
+  display: none;
+  position: fixed;
+  width: 30%;
+  left: 35%;
+  top: 75px;
+  background-color: rgba(0,0,0, 0.62);
+  border: 2px solid #ff9200;
+  z-index: 1002;
+  @media (max-width: 756px) {
+    width: 89%;
+    left: 5%;
+  }
+  & .form_name {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    & input {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  & .form_numb {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    & input {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  & .tenminutes {
+    width: 80%;
+    display: block;
+    float: left;
+    margin-left: 10%;
+    text-align: center;
+  }
+  & p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    & input {
+      padding: 10px;
+      background-color: inherit;
+      border: 2px solid #ff9200;
+      border-radius: 2px;
+      &:hover {
+        color: #ff9200;
+      }
+    }
+  }
+}
+#closeform {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1.5em;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 20px;
+  z-index: 1003;
+  &:hover {
+    color: #ff9200;
+  }
+}
+#closemenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5em;
+  padding: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  &:hover {
+    color: #ff9200;
+  }
+}
 
 /*------------------------------------------------------Конетнт-----------------------------------*/
 
 #page {
   margin-top: 65px; //марджин для фиксированого хедера
 }
+
+.rslides_nav {
+  color: #fff!important;
+  &:hover, &:active {
+    color: #fff!important;
+  }
+}
+#sample_slider {
+  & .owl-prev,  .owl-next {
+  background: url('img/arrow.png') no-repeat 1px 3px !important;
+  width: 64px !important;
+  height: 64px !important;
+  top:62%;
+  }
+  & .owl-prev {
+    transform: rotate(270deg);
+  }
+  & .owl-next {
+    transform: rotate(90deg);
+  }
+}
+
+
 
 .mainslider ul li .caption-wrap {
   width: 20%;
@@ -189,9 +413,7 @@ h2 {
   content: "";
   height: 2px;
   margin: 10px;
-  border-style: solid;
-  border-color: #8c8b8b;
-  border-width: 1px;
+  border: #8c8b8b 1px solid;
     @media (max-width: 756px ) {
       display: none;
     }
@@ -203,9 +425,7 @@ h2 {
   content: "";
   height: 2px;
   margin: 10px;
-  border-style: solid;
-  border-color: #8c8b8b;
-  border-width: 1px;
+  border: #8c8b8b 1px solid;
     @media (max-width: 756px ) {
       display: none;
     }
@@ -225,17 +445,21 @@ h2 {
 .buttonblock {
   min-height: 50px;
   padding: 24px 0;
-
-  & div:before {
+  text-align: center;
+  margin: 0 auto;
+  & .buttonblock-button {
     display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    content: "";
+    width: 24%;
+    @media (max-width: 960px){
+      width: 49%;
+    }
+    @media (max-width: 756px){
+      width: 99%;
+    }
   }
-
   & a {
     margin-top: 10px;
-    padding: 10px 0;
+    padding: 20px 0;
     vertical-align: middle;
     display: inline-block;
     width: 100%;
@@ -253,6 +477,18 @@ h2 {
     background-color: #3b96ca;
   }
   & a.but_energoteh:hover {
+    background-color: #32b441;
+  }
+  & a.but_komleks:active {
+    background-color: #ff9300;
+  }
+  & a.but_otoplenie:active {
+    background-color: #ff4848;
+  }
+  & a.but_ohlad:active {
+    background-color: #3b96ca;
+  }
+  & a.but_energoteh:active {
     background-color: #32b441;
   }
 
@@ -517,26 +753,16 @@ h2 {
       max-width: 100%;
       margin: 0;
     }
-
-    & button {
-      display: block;
-      border: 2px solid #ff9200;
-      background-color: #ff9200;
-      margin: 15px 0;
-      padding: 0 25px;
-      &:hover {
-        background: none;
-      }
-    }
   }
 }
 
 #adress-blok {
   background-color: #3a3c49;
-  padding: 30px 0;
+  padding: 10px 0;
   color: #fff;
   & p {
     text-align: center;
+    font-size: 24px;
   }
   & a {
     color: #fff;

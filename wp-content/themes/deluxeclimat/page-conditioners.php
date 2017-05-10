@@ -2,15 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: Nekit
- * Date: 17.04.2017
- * Time: 23:23
+ * Date: 09.05.2017
+ * Time: 0:31
  */
-
 get_header(); ?>
-            <section id="whyme" class="container-fluid">
+            <section id="truevibor" class="container-fluid">
                 <div class="row">
                     <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Почему мы</h2>
+                        <h2>Что важно учитывать при выборе кондиционера</h2>
                     </div>
 
                     <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="50">
@@ -158,15 +157,15 @@ get_header(); ?>
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <br><p>Адрес : г.Киев улица Васильковская 27/2</p><br>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <br><p>График работы: с 8:00 до 21:00 без выходных</p><br>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <p>Телефоны: <br> <a href="tel:0672262629">(067)226-26-29</a> <br> <a href="tel:0952872629">(095)287-26-29</a> <br> <a href="tel:0442282629">(044)228-26-29</a></p>
                         </div>
-    
+
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <br><p>Електронная почта: <a href="mailto:deluxeclimate@gmail.com">deluxeclimate@gmail.com</a></p>
                         </div>

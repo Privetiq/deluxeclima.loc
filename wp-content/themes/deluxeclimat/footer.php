@@ -17,10 +17,16 @@
             <div class="logo_footer hidden-sm hidden-xs">
                 <?php echo get_custom_logo(); ?>
             </div>
-            <p><strong>2017, Deluxeclimat</strong></p>
+            <p><strong>2017, Deluxeclimate</strong></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
+<script src="<?php echo get_template_directory_uri()?>/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri()?>/js/wow.min.js"></script>
+<script src="<?php echo get_template_directory_uri()?>/js/maskedinput.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

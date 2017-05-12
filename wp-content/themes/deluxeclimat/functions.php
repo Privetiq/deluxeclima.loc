@@ -119,6 +119,8 @@ function deluxeclimat_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'deluxeclimat_scripts' );
 
+add_theme_support( 'woocommerce' );
+
 /**
  * Implement the Custom Header feature.
  */

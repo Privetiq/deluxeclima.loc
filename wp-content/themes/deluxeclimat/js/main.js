@@ -12,6 +12,9 @@ $(document).ready(function(){
     $("#closeform").click(function () {
         $("#formcallback").hide();
     });
+    $(".formcallback-overlay").click(function () {
+        $("#formcallback").hide();
+    });
 });
 
 jQuery(function($){

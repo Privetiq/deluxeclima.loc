@@ -9,18 +9,18 @@
 get_header(); ?>
             <section id="whyme" class="container-fluid">
                 <div class="row">
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="h2_divider">
                         <h2>Почему мы</h2>
                     </div>
 
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="50">
+                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="0">
                         <div class="iconka">
                             <a class="icons-hand"></a>
                         </div>
                         <h3><strong>Индивидуальный</strong><br> подход</h3>
                         <p>Для нас каждый клиент и объект уникален, потому что наша задача предоставить решение, максимально удовлетворяющее ваши потребности</p>
                     </div>
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="1.5s" data-wow-offset="50">
+                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="1.5s" data-wow-offset="40">
                         <div class="iconka">
                             <a class="icons-home"></a>
                         </div>
@@ -28,14 +28,14 @@ get_header(); ?>
                         <p>Объект передается заказчику сотрудником ОТК только после введения в эксплуатацию и проверки<br>&nbsp;</p>
                     </div>
 
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="3s" data-wow-offset="50">
+                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="3s" data-wow-offset="80">
                         <div class="iconka">
                             <a class="icons-mydilo"></a>
                         </div>
                         <h3><strong>Постоянная</strong><br> поддержка</h3>
                         <p>На всех этапах работы мы ориентируемся  на долгосрочное сотрудн</p>
                     </div>
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="4s" data-wow-offset="50">
+                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="4s" data-wow-offset="120">
                         <div class="iconka">
                             <a class="icons-shield"></a>
                         </div>
@@ -43,7 +43,7 @@ get_header(); ?>
                         <p>При приобретении нашей продукции и проведению работ по установк</p>
                     </div>
 
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="h2_divider">
                         <h2>Как мы работаем</h2>
                     </div>
 
@@ -54,28 +54,28 @@ get_header(); ?>
                 <div class="podlojka">
                     <div class="container">
                         <div class="row">
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="1s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="1s" data-wow-offset="0">
                                 <img src="<?php echo get_template_directory_uri()?>/img/phone-call.png" alt="phone-call">
                                 <p><b>Заказываете услугу на сайте или по телефону<br></b> Связываетесь с представителем нашей компании</p>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="2s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="2s" data-wow-offset="40">
                                 <img src="<?php echo get_template_directory_uri()?>/img/house.png" alt="house">
                                 <p><b>Осуществляется анализ объекта<br></b> Инженерами проводится анализ объекта (дистанционно или с выездом), составляется задание на проектирование</p>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="3s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="3s" data-wow-offset="80">
                                 <img src="<?php echo get_template_directory_uri()?>/img/calculator.png" alt="calculator">
                                 <p><b>Подбираются материалы<br></b> Проводится расчет и подбор необходимых материалов и оборудования в нескольких вариантах, в зависимости от нужд клиента и состояния объекта.</p>
                             </div>
 
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="4s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="4s" data-wow-offset="120">
                                 <img src="<?php echo get_template_directory_uri()?>/img/quality.png" alt="quality">
                                 <p><b>Заключается договор<br></b> на поставку материала, оборудования и проведения работ, с учётом всех дополнительных требований заказчика</p>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="5s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="5s" data-wow-offset="140">
                                 <img src="<?php echo get_template_directory_uri()?>/img/settings.png" alt="settings">
                                 <p><b>Проведятся работы<br></b> Лучшими специалистами на наивысшем уровне проводятся работы, которые описанны в договоре</p>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="6s">
+                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="6s" data-wow-offset="160">
                                 <img src="<?php echo get_template_directory_uri()?>/img/contract.png" alt="contract">
                                 <p><b>Оценивается качество<br></b> На объект выезжает сотрудник из отдела технического контроля, оценивает работу, оставляет необходимые документы, ставит фирменные пломбы</p>
                             </div>
@@ -86,7 +86,7 @@ get_header(); ?>
 
             <section id="ourprojects" class="container-fluid">
                 <div class="row">
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="h2_divider">
                         <h2>Наши проэкты</h2>
                     </div>
                     <?php echo do_shortcode("[slide-anything id='112']");?>
@@ -110,7 +110,9 @@ get_header(); ?>
             <section id="about-us">
                 <div class="container">
                     <div class="row">
-                        <h2 class="h2_divider">О нас</h2><br>
+                        <div class="h2_divider">
+                            <h2>О нас</h2>
+                        </div>
                         <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
                             <p>
                                 <?php
@@ -124,7 +126,9 @@ get_header(); ?>
                         <div class="col-lg-5 col-md-4 hidden-sm hidden-xs">
                             <img src="<?php echo get_template_directory_uri() . '/img/bussinesteam.gif'?>" alt="AboutUs" class="img_about_us">
                         </div>
-                        <h2 class="h2_divider">Комплексные решения для дома и офиса</h2>
+                        <div class="h2_divider">
+                            <h2>Комплексные решения для дома и офиса</h2>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -141,7 +145,9 @@ get_header(); ?>
             </section>
 
             <section id="voprosi">
-                <h2 class="h2_divider">Остались вопросы?</h2>
+                <div class="h2_divider">
+                    <h2>Остались вопросы?</h2>
+                </div>
                 <p>Задайте их нам, заполнив форму ниже и наши специалисты свяжутся с Вами в ближайше время</p>
 
                 <div class="container">

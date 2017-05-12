@@ -62,37 +62,9 @@ h2 {
   height: 65px;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1002;
   background: rgba(254, 252, 251, 0.84);
   text-align: center;
-  & .logo {
-    display: inline-block;
-    z-index: 1001;
-    float: left;
-    & a.custom-logo-link {
-      display: block;
-      width: 145px;
-    }
-    @media (max-width: 360px) {
-      display: none;
-    }
-  }
-
-  & .logotext-block {
-    display: inline-block;
-    width: 150px;
-    margin-top: 8px;
-    @media (max-width: 1150px) {
-      display: none;
-    }
-    & .text-logo {
-      font-weight: bold;
-      font-size: 1.36em;
-    }
-    & .text-logo2 {
-      font-size: 0.8em;
-    }
-  }
   & .text-menu {
     font-weight: bold;
     @media (max-width: 1150px) {
@@ -104,7 +76,7 @@ h2 {
     font-size: 1.1em;
     vertical-align: top;
     margin-top: 16px;
-    @media (max-width: 960px) {
+    @media (max-width: 1121px) {
       display: none;
     }
   }
@@ -160,9 +132,7 @@ h2 {
     margin-right: 25px;
     width: 101px;
     @media (max-width: 960px) {
-      width: auto;
-      margin-top: 22px;
-      margin-right: 5px;
+
     }
 
     @media (max-width: 650px) {
@@ -188,6 +158,41 @@ h2 {
     margin-top: 14px;
     vertical-align: top;
 
+  }
+}
+.slider {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.logo {
+  display: inline-block;
+  z-index: 1001;
+  float: left;
+  & a {
+    display: block;
+    width: 145px;
+    height: 90px;
+  }
+  @media (max-width: 360px) {
+    display: none;
+  }
+}
+.logotext-block {
+  display: inline-block;
+  width: 150px;
+  margin-top: 8px;
+  float: left;
+  @media (max-width: 600px) {
+    display: none;
+  }
+  & .text-logo {
+    font-weight: bold;
+    font-size: 1.36em;
+  }
+  & .text-logo2 {
+    font-size: 0.8em;
   }
 }
 .main-button {
@@ -267,15 +272,36 @@ h2 {
 #formcallback {
   display: none;
   position: fixed;
-  width: 30%;
-  left: 35%;
-  top: 75px;
-  background-color: rgba(0,0,0, 0.62);
-  border: 2px solid #ff9200;
-  z-index: 1002;
-  @media (max-width: 756px) {
-    width: 89%;
-    left: 5%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1002!important;
+  & .formcallback-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.62);
+    border: 2px solid #ff9200;
+    z-index: 1001!important;
+    cursor: pointer;
+  }
+  & .callback-container {
+    width: 30%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.92);
+    position: relative;
+    left: 35%;
+    top: 100px;
+    padding: 20px 10px;
+    z-index: 1003!important;
+    @media (max-width: 756px) {
+      width: 89%;
+      left: 5%;
+      top: 70px;
+    }
   }
   & .form_name {
     width: 80%;
@@ -298,12 +324,21 @@ h2 {
       padding: 10px;
     }
   }
-  & .tenminutes {
+  & .callback-text, & .callback-head {
     width: 80%;
+    color: #000;
     display: block;
     float: left;
     margin-left: 10%;
     text-align: center;
+  }
+  & .callback-head {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  & .callback-text {
+    margin-bottom: 10px;
   }
   & p {
     text-align: center;
@@ -311,11 +346,12 @@ h2 {
     color: #fff;
     & input {
       padding: 10px;
-      background-color: inherit;
+      background-color: #ff9200;
       border: 2px solid #ff9200;
       border-radius: 2px;
       &:hover {
-        color: #ff9200;
+        color: #000;
+        background-color: inherit;
       }
     }
   }
@@ -327,7 +363,7 @@ h2 {
   font-size: 1.5em;
   right: 0;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: #000;
   border: none;
   padding: 20px;
   z-index: 1003;
@@ -355,7 +391,6 @@ h2 {
 #page {
   margin-top: 65px; //марджин для фиксированого хедера
 }
-
 .rslides_nav {
   color: #fff!important;
   &:hover, &:active {
@@ -376,9 +411,6 @@ h2 {
     transform: rotate(90deg);
   }
 }
-
-
-
 .mainslider ul li .caption-wrap {
   width: 20%;
   min-width: 300px;
@@ -392,56 +424,38 @@ h2 {
   }
   @media (max-width: 756px) {
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    width: 70%;
     height: auto;
-    background: rgba(255, 255, 255, 0.2);
-    color: #000;
     font-size: 0.8em;
   }
 }
-
 .h2_divider {
   text-align: center;
-  position: relative;
-  display: inline-block;
-
-  &:before {
-  width: 20%;
-  display: inline-block;
-  position: relative;
-  content: "";
-  height: 2px;
-  margin: 10px;
-  border: #8c8b8b 1px solid;
-    @media (max-width: 756px ) {
-      display: none;
-    }
-  }
-  &:after {
-  width: 20%;
-  display: inline-block;
-  position: relative;
-  content: "";
-  height: 2px;
-  margin: 10px;
-  border: #8c8b8b 1px solid;
-    @media (max-width: 756px ) {
-      display: none;
-    }
+  display: table;
+  height: 150px;
+  width: 100%;
+  &:before, &:after {
+    width: 100%;
+    display: inline-block;
+    content: "";
+    height: 2px;
+    margin: 75px 0;
+    border: #8c8b8b 1px solid;
+      @media (max-width: 756px ) {
+        display: none;
+      }
   }
   & h2 {
-    display: inline-block;
-    width: auto;
-    max-width: 40%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
     @media (max-width: 756px ) {
-      max-width: 100%;
       width: 100%;
     }
   }
 
 }
-
 .buttonblock {
   min-height: 50px;
   padding: 24px 0;
@@ -493,7 +507,9 @@ h2 {
   }
 
 }
-
+.touppercase {
+  text-transform: uppercase;
+}
 #whyme {
   position: relative;
   background-image: url(img/podlojka.png);
@@ -657,9 +673,6 @@ h2 {
 #about-us {
   background-color: #fdf6db;
   & h2 {
-    padding-top: 72px;
-    padding-bottom: 62px;
-    width: 100%;
     font-size: 22px;
     text-transform: uppercase;
   }
@@ -686,9 +699,6 @@ h2 {
   & p {
     display: block;
   }
-  & .podlojka {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
 }
 
 #voprosi {
@@ -697,10 +707,6 @@ h2 {
   background-repeat: no-repeat no-repeat;
   background-size: cover;
   text-align: center;
-  & h2 {
-    width: 100%;
-    padding: 35px;
-  }
   & p {
     padding-bottom: 35px;
     font-size: 1.3em;
@@ -772,19 +778,300 @@ h2 {
   }
 }
 
+.section-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 42px 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.blueback {
+  background-color: #eff7f7;
+
+  & h2 {
+
+  }
+}
+.podlojka {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+/*------------------------------------------------------вторая стр-------------------------------------*/
+#truevibor {
+  background-image: url(img/truevibor.png);
+  background-position: left top;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  min-height: 592px;
+  @media (max-width: 480px) {
+    background-position: center top;
+  }
+  & .h2_divider {
+    color: #000;
+  }
+}
+#banner-akcia {
+  background: linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+  background-image: -webkit-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+  background-image: -o-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+  position: relative;
+  width: 100%;
+  min-height: 355px;
+  & .banner-img1, & .banner-img2, & .banner-img3 {
+    position: absolute;
+  }
+
+  & .banner-img1 {
+    left: 10%;
+    top: calc(50% - 90px);
+    opacity: 0.3;
+    @media (max-width: 1200px) {
+      left: 0;
+    }
+    @media (max-width: 900px) {
+      opacity: 0.2;
+    }
+  }
+  & .banner-img2 {
+    left: calc(50% - 160px);
+    top: -34px;
+    @media (max-width: 600px) {
+      top: -25px;
+    }
+  }
+
+  & .banner-img3 {
+    right: 10%;
+    bottom: 0;
+    @media (max-width: 1200px) {
+      right: 0;
+    }
+    @media (max-width: 900px) {
+      right: 0;
+      opacity: 0.65;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  & .banner-text1, & .banner-text2, & .banner-text3 {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  & .banner-text1 {
+    top: 100px;
+    font-size: 46px;
+    font-family: 'Lobster', cursive;
+    @media (max-width: 600px) {
+      font-size: 38px;
+    }
+  }
+  & .banner-text2 {
+    top: 120px;
+    font-size: 38px;
+    color: #006aa4;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+  & .banner-text3 {
+    top: 140px;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+  & .banner-button {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 140px);
+    z-index: 3;
+    &:hover {
+      background-color: #dfeef6;
+    }
+  }
+}
+#vibor {
+  display: block;
+  background-color: inherit;
+  color: #000;
+  & p {
+    padding-bottom: 22px;
+    font-size: 1.2em;
+  }
+}
+#whyme2 {
+  color: #fff;
+  background-image: url(img/nature.png);
+  background-size: cover;
+  min-height: 400px;
+
+  & .whymyh2 {
+    padding: 50px 0;
+    &:before, &:after {
+      border-color: #fff;
+    }
+  }
+  & .myicon {
+    display: inline-block;
+    width: 84px;
+    height: 70px;
+    background: url(img/sprite2.png) no-repeat;
+  }
+  & .icon-customer {
+    background-position: 0 0;
+    width: 70px;
+  }
+  & .icon-aircond {
+    background-position: -68px 0;
+  }
+  & .icon-shield {
+    background-position: -151px 0;
+  }
+  & p {
+    display: inline-block;
+    width: calc(100% - 84px);
+    float: right;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+}
+#katalog {
+  background-color: #eff9f8;
+  text-align: center;
+  & .mywrap {
+    margin: 20px auto;
+  }
+  & .typecond {
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    height: 270px;
+    @media (max-width: 1120px) {
+      width: 50%;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  & .link-typecond {
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    margin: 5px 5px;
+    background-color: #92c4df;
+    &:hover {
+      background-color: #3b96ca;
+      text-decoration: none;
+    }
+    & .cat_img {
+      display: block;
+      height: 60%;
+      & img {
+        margin-top: 15px;
+        max-height: 100%;
+        max-width: 100%;
+        resize: both;
+      }
+    }
+    & p {
+      display: block;
+      height: 40%;
+      padding: 5px;
+      color: #fff;
+      overflow: hidden;
+    }
+  }
+
+  .catalog {
+    background: linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+    background-image: -webkit-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+    background-image: -o-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
+    & .elitnost {
+
+      & .brand-cond {
+        margin-top: 1px;
+        margin-bottom: 5px;
+        background-color: #fff;
+        height: 85px;
+        text-align: center;
+        & img {
+          max-width: 90%;
+          resize: both;
+          max-height: 65px;
+          margin-top: 18px;
+        }
+        &:hover {
+          background-color: #abcee7;
+          box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+      & h3 {
+        font-family: 'Lobster', cursive;
+        font-size: x-large;
+        font-weight: bold;
+        color: #fff;
+      }
+      & .myicon3 {
+        display: inline-block;
+        height: 34px;
+        background: url(img/sprite3.png) no-repeat;
+        margin-right: 8px;
+      }
+      & .icon-award {
+        width: 40px;
+        background-position: 0 0;
+      }
+      & .icon-diamond {
+        width: 25px;
+        background-position: -40px 0;
+      }
+      & .icon-leaf {
+        width: 32px;
+        background-position: -65px 0;
+      }
+    }
+
+    & .catalog-body {
+      background-color: #f2f8fb;
+      height: 900px;
+      margin: 20px auto;
+      & .loop-catalog {
+        height: 900px;
+      }
+    }
+  }
+
+}
+#banner-quest {
+
+}
 /*-----------------------------------------------------Подвал------------------------------------------*/
 .logo_footer {
   display: inline-block;
-  position: absolute;
+  position: relative;
   z-index: 1000;
-  bottom: 30px;
+  bottom: 10px;
   left: 10%;
+  height: 80px;
+  & a {
+    height: 90px;
+    overflow: hidden;
+  }
 }
 
 
 .site-info {
   position: relative;
-  background: #ff9200;
   width: 100%;
   margin-top: -5px;
   & p {

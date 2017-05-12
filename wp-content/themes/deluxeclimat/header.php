@@ -17,11 +17,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/jquery.mCustomScrollbar.css">
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Days+One|Roboto:400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Days+One|Lobster|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -65,23 +66,18 @@
         <button id="closemenu">X</button><br>
         <div class="inmenuwrap">
             <div class="inmenu-block">
-                <a class="inmenu" href="#">Комплексные решения для дома и офиса</a>
-                <a class="inmenu" href="#">Отопление</a>
+                <a class="inmenu" href="<?php get_home_url(); ?>/">Комплексные решения для дома и офиса</a>
+                <a class="inmenu" href="<?php get_home_url(); ?>/">Отопление</a>
                 <a class="inmenu" href="<?php get_home_url()?>/conditioners">Охлаждение</a>
-                <a class="inmenu" href="#">Энергозберегающие технологии</a>
+                <a class="inmenu" href="<?php get_home_url(); ?>/">Энергозберегающие технологии</a>
             </div>
             <button class="callbackmenu main-button"><?php _e('Заказать звонок', 'deluxeclima')?></button><br>
             <div class="languageblock">
-                <a class="language-pick" href="#">Рус</a>
-                <a class="language-pick" href="#">Укр</a>
-                <a class="language-pick" href="#">Eng</a>
+                <a class="language-pick" href="<?php get_home_url(); ?>/ru">Рус</a>
+                <a class="language-pick" href="<?php get_home_url(); ?>/uk">Укр</a>
+                <a class="language-pick" href="<?php get_home_url(); ?>/en">Eng</a>
             </div>
         </div>
-    </div>
-    <div id="formcallback" class="animated flipInX">
-        <button id="closeform">X</button><br>
-        <p class="tenminutes">Укажите контакты и специалист в течении 10 минут свяжется с Вами</p>
-        <?php echo do_shortcode('[contact-form-7 id="131" title="form-callback"]') ?>
     </div>
 
 	<div id="content" class="site-content">

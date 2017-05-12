@@ -6,150 +6,191 @@
  * Time: 0:31
  */
 get_header(); ?>
-            <section id="truevibor" class="container-fluid">
-                <div class="row">
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Что важно учитывать при выборе кондиционера</h2>
-                    </div>
-
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="50">
-                        <div class="iconka">
-                            <a class="icons-hand"></a>
+        <div class="h2_divider blueback">
+            <h2>Что важно учитывать при выборе кондиционера</h2>
+        </div>
+            <section id="truevibor">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-caption col-lg-offset-6 col-lg-6 col-md-offset-4 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+                            <p>ПРИ ВЫБОРЕ КОНДИЦИОНЕРА за частую многие смотрят на рекомендуемую площадь предусмотренную производителем, забывая о главной характеристике ТЕПЛО-ХОЛОДО ПРОИЗВОДИТЕЛЬНОСТИ (кВт). А именно этот параметр является самым важным, индивидуальным для каждого помещения критерием, расчет которого обязательно должен проводится специалистами.<br><br>
+                                Выбирая кондиционер основываясь на площадь "С ЗАПАСОМ" - скорее всего вы переплатите за более мощное оборудование которое будет нецелесообразно тратить энергоресурсы, в случае выбора холодильного оборудования по рекомендованной площади - существует вероятность недостатка производительности, при этом оборудование будет работать на пределе своих возможностей не принося ожидаемого результата<br><br>
+                                Вот почему для нас так важен индивидуальный подход к каждому клиенту!<br><br>
+                            </p>
+                            <button class="callbackmenu main-button2">Узнать подробнее</button>
                         </div>
-                        <h3><strong>Индивидуальный</strong><br> подход</h3>
-                        <p>Для нас каждый клиент и объект уникален, потому что наша задача предоставить решение, максимально удовлетворяющее ваши потребности</p>
                     </div>
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="1.5s" data-wow-offset="50">
-                        <div class="iconka">
-                            <a class="icons-home"></a>
-                        </div>
-                        <h3><strong>Cдача работ</strong><br> под ключ</h3>
-                        <p>Объект передается заказчику сотрудником ОТК только после введения в эксплуатацию и проверки<br>&nbsp;</p>
-                    </div>
-
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="3s" data-wow-offset="50">
-                        <div class="iconka">
-                            <a class="icons-mydilo"></a>
-                        </div>
-                        <h3><strong>Постоянная</strong><br> поддержка</h3>
-                        <p>На всех этапах работы мы ориентируемся  на долгосрочное сотрудн</p>
-                    </div>
-                    <div class="wow bounceInRight col-lg-3 col-md-6 col-sm-12 col-xs-12" data-wow-duration="1s" data-wow-delay="4s" data-wow-offset="50">
-                        <div class="iconka">
-                            <a class="icons-shield"></a>
-                        </div>
-                        <h3><strong>Гарантия</strong><br> 2-5 лет</h3>
-                        <p>При приобретении нашей продукции и проведению работ по установк</p>
-                    </div>
-
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Как мы работаем</h2>
-                    </div>
-
                 </div>
             </section>
 
-            <section id="kakrabotaem">
+            <div class="h2_divider blueback">
+                <h2>Наши акции и специальные предложения</h2>
+            </div>
+
+            <section id="banner-akcia">
+                <img class="banner-img1" src="<?php echo get_template_directory_uri(); ?>/img/specpredlogenie.png" alt="Специальное предложение">
+                <img class="banner-img3" src="<?php echo get_template_directory_uri(); ?>/img/montajnik.png" alt="Монтажник">
+                <img class="banner-img2" src="<?php echo get_template_directory_uri(); ?>/img/SRK-ZXA-S.png" alt="Кондиционер недорого">
+                <span class="banner-text1">Купите кондиционер у нас</span>
+                <span class="banner-text2">и получите монтаж</span>
+                <span class="banner-text3">за 1 гривну!</span>
+                <a href="#katalog" class="main-button banner-button">Смотреть каталог</a>
+            </section>
+
+            <section id="vibor">
+                <div class="h2_divider">
+                    <h2>Обычный или инверторный? Вот в чем вопрос</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p><strong>Обычные кондиционеры</strong> работают фактически в двух режимах: слабое и сильное охлаждение.</p>
+                            <p><strong>Инверторные кондиционеры</strong> точнее поддерживают температуру (заданный режим). Инверторные варианты издают заметно меньше шума</p>
+                            <p><strong>Обычные кондиционеры</strong> имеют еще один недостаток — большее потребление энергии. Если вы используется инверторные приборы, то экономия электроэнергии составляет примерно тридцать процентов.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p><b>При одинаковой мощности</b> инверторные кондиционеры будут охлаждать помещение быстрее. Обычно на это требуется порядка пятнадцати минут.</p>
+                            <p><i>Инверторные кондиционеры более надежны</i> (срок их ксплуатации больше). Можно сказать, это является альтернативой их высокой стоимости.</p>
+                            <p><strong class="touppercase">Помогут Вам выбрать нужный кондиционер наши высококвалифицированные специалисты</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="whyme2">
                 <div class="podlojka">
+                        <div class="container">
+                            <div class="row">
+                                <div class="h2_divider whymyh2">
+                                    <h2>Почему стоит доверить выбор кондиционера именно нам</h2>
+                                </div>
+                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="0s" data-wow-offset="0">
+                                    <div class="myicon icon-customer"></div>
+                                    <p><strong>ИНДИВИДУАЛЬНО для ВАС</strong><br>
+                                        Проведем расчет для оптимального подбора оборудования с <b>учётом всех Ваших желаний</b></p>
+                                    </p>
+                                </div>
+                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="1s" data-wow-offset="50">
+                                    <div class="myicon icon-aircond"></div>
+                                    <p><strong>КАЧЕСТВЕННЫЙ монтаж</strong><br>
+                                       Специалистами нашей компании проведётся монтаж согласно <b>всех норм и стандартов</b>
+                                    </p>
+                                </div>
+                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="2s" data-wow-offset="100">
+                                    <div class="myicon icon-shield"></div>
+                                    <p><strong>Гарантия 2-5 лет</strong><br>
+                                        Оставим гарантию на проделанные работы сроком равным <b>гарантии на оборудование: 2-5 лет!</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <section id="katalog">
+                <div class="h2_divider whymyh2">
+                    <h2>Выберите тип кондиционера и бренд для просмотра каталога товаров</h2>
+                </div>
+                <div class="mywrap">
+                    <div class="typecond">
+                        <a href="#" class="link-typecond">
+                            <div class="cat_img">
+                                <img src="<?php echo get_template_directory_uri()?>/img/nastolnie.png" alt="Настольные">
+                            </div>
+                            <p><strong>Настенные</strong><br> сплит/мульти системы</p>
+                        </a>
+                    </div><!--
+                 --><div class="typecond">
+                        <a href="#" class="link-typecond">
+                            <div class="cat_img">
+                                <img src="<?php echo get_template_directory_uri()?>/img/kasetnie.png" alt="Касетные">
+                            </div>
+                            <p><strong>Касетные и напольно-потолочные</strong><br>сплит/мульти системы</p>
+                        </a>
+                    </div><!--
+                 --><div class="typecond">
+                        <a href="#" class="link-typecond">
+                            <div class="cat_img">
+                                <img src="<?php echo get_template_directory_uri()?>/img/kanalnie.png" alt="Канальные">
+                            </div>
+                            <p><strong>Канальные</strong><br> сплит/мульти системы</p>
+                        </a>
+                    </div><!--
+                 --><div class="typecond">
+                        <a href="" class="link-typecond">
+                            <div class="cat_img">
+                                <img src="<?php echo get_template_directory_uri()?>/img/promish.png" alt="Промышленные">
+                            </div>
+                            <p><strong>Промышленные</strong><br> холодильное оборудование и вентиляция</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="catalog">
                     <div class="container">
                         <div class="row">
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="1s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/phone-call.png" alt="phone-call">
-                                <p><b>Заказываете услугу на сайте или по телефону<br></b> Связываетесь с представителем нашей компании</p>
+                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h3><i class="myicon3 icon-award"></i>Deluxe</h3>
+                                <div class="brand-cond">
+
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsubishi-electric.png" alt="Mitsubisi Electric" class="band-cond-img">
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/Panasonic.png" alt="Panasonic" class="band-cond-img">
+                                </div>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="2s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/house.png" alt="house">
-                                <p><b>Осуществляется анализ объекта<br></b> Инженерами проводится анализ объекта (дистанционно или с выездом), составляется задание на проектирование</p>
+                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h3><i class="myicon3 icon-diamond"></i>Luxe</h3>
+                                <div class="brand-cond">
+
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsubisi.png" alt="Mitsubisi" class="band-cond-img">
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/gree.png" alt="GREE" class="band-cond-img">
+                                </div>
                             </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="3s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/calculator.png" alt="calculator">
-                                <p><b>Подбираются материалы<br></b> Проводится расчет и подбор необходимых материалов и оборудования в нескольких вариантах, в зависимости от нужд клиента и состояния объекта.</p>
+                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h3><i class="myicon3 icon-leaf"></i>Euro</h3>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/haier.png" alt="Haier" class="band-cond-img">
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsushito.png" alt="Mitsushito" class="band-cond-img">
+                                </div>
+                                <div class="brand-cond">
+                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/cooperhunter.png" alt="Cooper and Hunter" class="band-cond-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row catalog-body">
+                            <div class="col-lg-3 col-md-5 hidden-sm hidden-xs">
+
                             </div>
 
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="4s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/quality.png" alt="quality">
-                                <p><b>Заключается договор<br></b> на поставку материала, оборудования и проведения работ, с учётом всех дополнительных требований заказчика</p>
-                            </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="5s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/settings.png" alt="settings">
-                                <p><b>Проведятся работы<br></b> Лучшими специалистами на наивысшем уровне проводятся работы, которые описанны в договоре</p>
-                            </div>
-                            <div class="wow bounceInUp col-lg-4 col-md-6 col-sm-12 col-xs-12" data-wow-delay="6s">
-                                <img src="<?php echo get_template_directory_uri()?>/img/contract.png" alt="contract">
-                                <p><b>Оценивается качество<br></b> На объект выезжает сотрудник из отдела технического контроля, оценивает работу, оставляет необходимые документы, ставит фирменные пломбы</p>
+                            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12 loop-catalog">
+                                <?php woocommerce_content(); ?>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="ourprojects" class="container-fluid">
-                <div class="row">
-                    <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Наши проэкты</h2>
-                    </div>
-                    <?php echo do_shortcode("[slide-anything id='112']");?>
-
-
-                    <div class="background-ourproject">
-                        <div class="bg-before">
-                            <img src="<?php echo get_template_directory_uri()?>/img/keyboard.png" alt="keyboard">
-                        </div>
-                        <div class="bg-after">
-                            <img src="<?php echo get_template_directory_uri()?>/img/MagicMouse2.png" alt="magicmouse">
-                        </div>
-                        <strong>Оформите заявку сейчас</strong>
-                        <hr>
-                        <p>и получите расчет стоимости Вашего проекта БЕСПЛАТНО</p>
-                        <button class="callbackmenu">ОФОРМИТЬ ЗАЯВКУ</button>.
-                    </div>
-                </div>
-            </section>
-
-            <section id="about-us">
-                <div class="container">
-                    <div class="row">
-                        <h2 class="h2_divider">О нас</h2><br>
-                        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
-                            <p>
-                                <?php
-                                while ( have_posts() ) : the_post();
-
-                                    get_template_part( 'template-parts/content', 'page' );
-
-                                endwhile; // End of the loop.
-                                ?>
-                        </div>
-                        <div class="col-lg-5 col-md-4 hidden-sm hidden-xs">
-                            <img src="<?php echo get_template_directory_uri() . '/img/bussinesteam.gif'?>" alt="AboutUs" class="img_about_us">
-                        </div>
-                        <h2 class="h2_divider">Комплексные решения для дома и офиса</h2>
-                    </div>
-                </div>
-            </section>
-
-            <section id="kompleks">
-                <div class="caption">
-                    <p>Преимущество комплексного подхода по достижению максимальной экономичности для Вашего дома и офиса</p>
-                    <p>Для качественного выполнения проекта по созданию уютного микроклимата помещения очень важно учитывать все внутренние и внешние факторы, влияющие на избыток
-                        и потерю тепла, что в свою очередь влечет дополнительные финансовые затраты.</p>
-                    <p>Нашей основной целью является индивидуальный подход к каждому клиенту, проведение расчетов, подбор оборудования и средств энергосбережения таким образом, чтобы обеспечить оптимальные капитальные вложения, максимально быструю окупаемость, путём снижения эксплуатационных затрат.</p>
-
-                    <button class="callbackmenu main-button2">Записаться на консультацию</button>
-                </div>
-            </section>
-
-            <section id="voprosi">
-                <h2 class="h2_divider">Остались вопросы?</h2>
-                <p>Задайте их нам, заполнив форму ниже и наши специалисты свяжутся с Вами в ближайше время</p>
-
-                <div class="container">
-                    <div class="row">
-                        <?php echo do_shortcode('[contact-form-7 id="28" title="Заказать звонок"]') ?>
-                    </div>
-                </div>
 
             </section>
+
+            <?php
+            while ( have_posts() ) : the_post();
+
+                get_template_part( 'template-parts/content', 'page' );
+
+
+
+            endwhile; // End of the loop.
+            ?>
 
             <div id="adress-blok">
                 <div class="container">

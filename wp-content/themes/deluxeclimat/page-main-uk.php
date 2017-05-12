@@ -9,7 +9,7 @@
 get_header(); ?>
     <section id="whyme" class="container-fluid">
         <div class="row">
-            <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="h2_divider">
                 <h2>Почему мы</h2>
             </div>
 
@@ -43,7 +43,7 @@ get_header(); ?>
                 <p>При приобретении нашей продукции и проведению работ по установк</p>
             </div>
 
-            <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="h2_divider">
                 <h2>Как мы работаем</h2>
             </div>
 
@@ -86,7 +86,7 @@ get_header(); ?>
 
     <section id="ourprojects" class="container-fluid">
         <div class="row">
-            <div class="h2_divider col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="h2_divider">
                 <h2>Наши проэкты</h2>
             </div>
             <?php echo do_shortcode("[slide-anything id='112']");?>
@@ -110,7 +110,9 @@ get_header(); ?>
     <section id="about-us">
         <div class="container">
             <div class="row">
-                <h2 class="h2_divider">О нас</h2><br>
+                <div class="h2_divider">
+                    <h2>О нас</h2>
+                </div>
                 <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
                     <p>
                         <?php
@@ -124,7 +126,9 @@ get_header(); ?>
                 <div class="col-lg-5 col-md-4 hidden-sm hidden-xs">
                     <img src="<?php echo get_template_directory_uri() . '/img/bussinesteam.gif'?>" alt="AboutUs" class="img_about_us">
                 </div>
-                <h2 class="h2_divider">Комплексные решения для дома и офиса</h2>
+                <div class="h2_divider">
+                    <h2>Комплексные решения для дома и офиса</h2>
+                </div>
             </div>
         </div>
     </section>
@@ -141,7 +145,9 @@ get_header(); ?>
     </section>
 
     <section id="voprosi">
-        <h2 class="h2_divider">Остались вопросы?</h2>
+        <div class="h2_divider">
+            <h2>Остались вопросы?</h2>
+        </div>
         <p>Задайте их нам, заполнив форму ниже и наши специалисты свяжутся с Вами в ближайше время</p>
 
         <div class="container">

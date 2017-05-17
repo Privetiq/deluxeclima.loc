@@ -57,6 +57,11 @@ get_header(); ?>
                 </div>
             </section>
 
+<!--            <?php //while ( have_posts() ) : the_post();
+//                get_template_part( 'template-parts/content', 'page' );
+//                endwhile; // End of the loop.
+                ?>-->
+
             <section id="whyme2">
                 <div class="podlojka">
                         <div class="container">
@@ -64,19 +69,19 @@ get_header(); ?>
                                 <div class="h2_divider whymyh2">
                                     <h2>Почему стоит доверить выбор кондиционера именно нам</h2>
                                 </div>
-                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="0s" data-wow-offset="0">
+                                <div class="wow fadeInUpBig col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="0s" data-wow-offset="0">
                                     <div class="myicon icon-customer"></div>
                                     <p><strong>ИНДИВИДУАЛЬНО для ВАС</strong><br>
                                         Проведем расчет для оптимального подбора оборудования с <b>учётом всех Ваших желаний</b></p>
                                     </p>
                                 </div>
-                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="1s" data-wow-offset="50">
+                                <div class="wow fadeInUpBig col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="1s" data-wow-offset="50">
                                     <div class="myicon icon-aircond"></div>
                                     <p><strong>КАЧЕСТВЕННЫЙ монтаж</strong><br>
                                        Специалистами нашей компании проведётся монтаж согласно <b>всех норм и стандартов</b>
                                     </p>
                                 </div>
-                                <div class="wow bounceInRight col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="2s" data-wow-offset="100">
+                                <div class="wow fadeInUpBig col-lg-4 col-md-4 col-sm-12 col-xs-12" data-wow-delay="2s" data-wow-offset="100">
                                     <div class="myicon icon-shield"></div>
                                     <p><strong>Гарантия 2-5 лет</strong><br>
                                         Оставим гарантию на проделанные работы сроком равным <b>гарантии на оборудование: 2-5 лет!</b>
@@ -88,109 +93,23 @@ get_header(); ?>
             </section>
 
             <section id="katalog">
-                <div class="h2_divider whymyh2">
-                    <h2>Выберите тип кондиционера и бренд для просмотра каталога товаров</h2>
-                </div>
-                <div class="mywrap">
-                    <div class="typecond">
-                        <a href="#" class="link-typecond">
-                            <div class="cat_img">
-                                <img src="<?php echo get_template_directory_uri()?>/img/nastolnie.png" alt="Настольные">
-                            </div>
-                            <p><strong>Настенные</strong><br> сплит/мульти системы</p>
-                        </a>
-                    </div><!--
-                 --><div class="typecond">
-                        <a href="#" class="link-typecond">
-                            <div class="cat_img">
-                                <img src="<?php echo get_template_directory_uri()?>/img/kasetnie.png" alt="Касетные">
-                            </div>
-                            <p><strong>Касетные и напольно-потолочные</strong><br>сплит/мульти системы</p>
-                        </a>
-                    </div><!--
-                 --><div class="typecond">
-                        <a href="#" class="link-typecond">
-                            <div class="cat_img">
-                                <img src="<?php echo get_template_directory_uri()?>/img/kanalnie.png" alt="Канальные">
-                            </div>
-                            <p><strong>Канальные</strong><br> сплит/мульти системы</p>
-                        </a>
-                    </div><!--
-                 --><div class="typecond">
-                        <a href="" class="link-typecond">
-                            <div class="cat_img">
-                                <img src="<?php echo get_template_directory_uri()?>/img/promish.png" alt="Промышленные">
-                            </div>
-                            <p><strong>Промышленные</strong><br> холодильное оборудование и вентиляция</p>
-                        </a>
-                    </div>
-                </div>
+                <?php do_action('woocommerce_before_main_content'); ?>
 
-                <div class="catalog">
-                    <div class="container">
-                        <div class="row">
-                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <h3><i class="myicon3 icon-award"></i>Deluxe</h3>
-                                <div class="brand-cond">
+                    <?php do_action('woocommerce_archive_description'); ?>
 
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsubishi-electric.png" alt="Mitsubisi Electric" class="band-cond-img">
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/Panasonic.png" alt="Panasonic" class="band-cond-img">
-                                </div>
-                            </div>
-                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <h3><i class="myicon3 icon-diamond"></i>Luxe</h3>
-                                <div class="brand-cond">
+                    <?php do_action('woocommerce_before_shop_loop'); ?>
+                        <?php do_action('woocommerce_before_shop_loop_item'); ?>
+                            <?php do_action('woocommerce_before_shop_loop_item_title'); ?>
 
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsubisi.png" alt="Mitsubisi" class="band-cond-img">
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/gree.png" alt="GREE" class="band-cond-img">
-                                </div>
-                            </div>
-                            <div class="elitnost col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <h3><i class="myicon3 icon-leaf"></i>Euro</h3>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/haier.png" alt="Haier" class="band-cond-img">
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/mitsushito.png" alt="Mitsushito" class="band-cond-img">
-                                </div>
-                                <div class="brand-cond">
-                                    <img src="<?php echo get_template_directory_uri()?>/img/cond-brands/cooperhunter.png" alt="Cooper and Hunter" class="band-cond-img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row catalog-body">
-                            <div class="col-lg-3 col-md-5 hidden-sm hidden-xs">
+                                <?php do_action('woocommerce_shop_loop_item_title'); ?>
 
-                            </div>
+                            <?php do_action('woocommerce_after_shop_loop_item_title'); ?>
+                        <?php do_action('woocommerce_after_shop_loop_item'); ?>
+                    <?php do_action('woocommerce_after_shop_loop'); ?>
 
-                            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12 loop-catalog">
-                                <?php woocommerce_content(); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <?php do_action('woocommerce_after_main_content'); ?>
             </section>
 
-            <?php
-            while ( have_posts() ) : the_post();
-
-                get_template_part( 'template-parts/content', 'page' );
-
-
-
-            endwhile; // End of the loop.
-            ?>
 
             <div id="adress-blok">
                 <div class="container">

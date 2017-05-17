@@ -120,6 +120,11 @@ function deluxeclimat_scripts() {
 add_action( 'wp_enqueue_scripts', 'deluxeclimat_scripts' );
 
 add_theme_support( 'woocommerce' );
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+
+define('WOOCOMMERCE_USE_CSS', false);
 
 /**
  * Implement the Custom Header feature.
@@ -145,3 +150,17 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Подключу ка я свой woocommerce акшн отдельным файликом
+ **/
+
+require get_template_directory() . '/template-parts/woocommerce-actions.php';
+
+/* отключил h1 титул на страничках*/
+add_filter( 'woocommerce_page_title', 'custom_woocommerce_page_title');
+function custom_woocommerce_page_title( $page_title ) {
+    if( $page_title == 'Shop' ) {
+        return $page_title = "Выберите тип кондиционера и бренд для просмотра каталога товаров";
+    }
+}

@@ -952,9 +952,10 @@ h2 {
     margin: 20px auto;
   }
   & .typecond {
+    vertical-align: top;
     text-align: center;
     display: inline-block;
-    width: 25%;
+    width: 23%;
     height: 270px;
     @media (max-width: 1120px) {
       width: 50%;
@@ -992,7 +993,7 @@ h2 {
     }
   }
 
-  .catalog {
+  & .catalog {
     background: linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
     background-image: -webkit-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
     background-image: -o-linear-gradient(to right, #3b96ca 0%, #dfeef6 100%);
@@ -1027,30 +1028,93 @@ h2 {
         background: url(img/sprite3.png) no-repeat;
         margin-right: 8px;
       }
-      & .icon-award {
+      & .icon-deluxe {
         width: 40px;
         background-position: 0 0;
       }
-      & .icon-diamond {
+      & .icon-luxe {
         width: 25px;
         background-position: -40px 0;
       }
-      & .icon-leaf {
+      & .icon-euro {
         width: 32px;
         background-position: -65px 0;
       }
     }
-
-    & .catalog-body {
+    & .catalog-bg {
       background-color: #f2f8fb;
+      margin-top: 20px;
+      padding: 20px 0;
+    }
+    & .catalog-body {
       height: 900px;
-      margin: 20px auto;
+      overflow-y: hidden;
+      margin-bottom: 5px;
+      padding-bottom: 15px;
       & .loop-catalog {
         height: 900px;
       }
     }
   }
 
+}
+
+/*-----------------------------------------------------WooCommerce-------------------------------------*/
+.loop-product {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #aeaeae;
+  margin-bottom: 5px;
+  padding: 5px;
+  position: relative;
+  & .product_sku {
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    color: #aeaeae;
+  }
+  & .type_product {
+    font-weight: bold;
+    font-style: italic;
+  }
+  & .loop-left {
+    width: 30%;
+    padding: 0;
+    margin: 22px 0 0 0;
+    float: left;
+    @media (max-width: 600px) {
+      width: 100%;
+    };
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  & .loop-right {
+    width: calc(70% - 10px);
+    padding: 0;
+    margin: 0;
+    float: right;
+    text-align: left;
+    @media (max-width: 600px) {
+      width: 100%;
+    };
+
+    & .product_price {
+      float: left;
+      font-size: 1.2em;
+      & span {
+        font-size: 2em;
+        color: #128d26;
+      }
+    }
+    & .product_description {
+      margin: 20px 0;
+    }
+    & a.main-button {
+      float: right;
+    }
+  }
 }
 #banner-quest {
 
